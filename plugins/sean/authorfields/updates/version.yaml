@@ -1,0 +1,5 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table sean_authorfields_'
+    - builder_table_create_sean_authorfields_.php

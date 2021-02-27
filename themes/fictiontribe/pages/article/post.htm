@@ -1,0 +1,28 @@
+title = "Post"
+url = "/post/:slug"
+layout = "article"
+description = "Viewing a single article"
+is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "article/category"
+
+[nextAndPrev]
+category = "noFilter"
+postPage = "article/post"
+
+[SeoBlogPost]
+post = "post"
+==
+<?php
+function onEnd()
+{
+  $this->page->title = $this['post']->title;   
+}
+?>
+==
+{% component 'blogPost' %}
+{% component 'nextAndPrev' %}

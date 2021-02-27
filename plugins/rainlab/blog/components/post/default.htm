@@ -1,0 +1,94 @@
+{% set post = __SELF__.post %}
+
+    
+
+    <div id="hero">
+      {% if post.featured_images.count %}  
+        {% for image in post.featured_images %}
+            <div id="masthead-image" style="background: url('{{ image.path }}')">
+        {% endfor %}
+         {% else %}   
+          <div id="masthead-image" style="background: url('{{ 'assets/images/fictiontribe-logo-white.png'|theme }}')">
+        {% endif %}    
+          <div id="headlines">
+            <h1>{{post.title}}</h1>
+
+            {% if post.getField('subtitle') %}
+                <h2>{{ post.getField('subtitle')}}</h2> 
+            {% endif %}   
+          </div>
+    </div>
+    
+
+     
+    </div>
+
+    <article>
+        <div id="attributation-bar">
+                    <div id="author-avatar">
+                       <img class="avatar" src="{{ post.user.getAvatarThumb(60) }}" />
+                        </div>
+                    <div id="author-info">
+                        
+                        <span class="author-name">{{ post.user.first_name }} {{ post.user.last_name }}</span>
+                        <br>
+                        <span class="author-title">Chief Operating Officer</span>
+                        <br>
+                        <span class="time-stamp">Feb 25, 2021</span>
+                    </div>
+                    <div id="social-links">
+                        <a href="https://twitter.com/fictiontribe" target="_blank">
+                            <img src="{{ 'assets/images/social/twitter_black.svg'|theme }}" border="0" width="30" height="30" alt="Twitter"></a>
+                        <a href="https://www.facebook.com/thefictiontribe" target="_blank">
+                            <img src="{{ 'assets/images/social/facebook_black.svg'|theme }}" border="0" width="30" height="30" alt="Facebook"></a>
+                        <a href="https://www.youtube.com/channel/UCgUDPbWwQAz3Dq_8jTSggfw" target="_blank">
+                            <img src="{{ 'assets/images/social/youtube_black.sv'|theme }}g" border="0" width="30" height="30" alt="YouTube"></a>
+                        <a href="https://www.linkedin.com/company/the-fiction-tribe" target="_blank">
+                            <img src="{{ 'assets/images/social/linkedin_black.s'|theme }}vg" border="0" width="30" height="30" alt="LinkedIN"></a>
+                        <a href="https://instagram.com/fictiontribe/" target="_blank">
+                            <img src="{{ 'assets/images/social/instagram_black.sv'|theme }}g" border="0" width="30" height="30" alt="Instagram"></a>
+                        <a href="https://www.pinterest.com/thefictiontribe/" target="_blank" alt="Pintrest">
+                            <img src="{{ 'assets/images/social/pintrest_black.svg'|theme }}" border="0" width="30" height="30"></a>
+                    </div>
+                    <div class="brclear"></div>
+            </div>
+        <div class="container">
+            <div class="row">
+                
+
+                <div class="col-lg-9 order-lg-1">
+                    <div id="article-body">
+                    
+                        {{ post.content_html | raw }}
+
+                        <p><strong>Need a hand making engaging content that meets your clients' needs when and where they are? Hit us up at the Fiction Tribe. We're happy to help <a href="mailto:Talk@fictiontribe.com">(Talk@fictiontribe.com)</a></strong></p>
+
+                            <p class="info">
+                                {% if post.categories.count %}
+                                    {% set categoryLinks = post.categories | map(c => "<a href=\"#{c.url}\">#{c.name}</a>") | join(', ') %}
+
+                                    {{ 'rainlab.blog::lang.post.posted_byline' | trans({
+                                        date: post.published_at | date('rainlab.blog::lang.post.date_format' | trans),
+                                        categories: categoryLinks
+                                    }) }}
+                                {% else %}
+                                    {{ 'rainlab.blog::lang.post.posted_byline_no_categories' | trans({
+                                        date: post.published_at | date('rainlab.blog::lang.post.date_format'|trans)
+                                    }) }}
+                                {% endif %}
+                            </p>
+                    </div>
+                        
+                </div>
+
+                <div id="sidebar" class="col-lg-3 order-lg-12">
+                    <h4>About Fiction&nbsp;Tribe</h4>
+                    <span class="detail">We focus on moving from marketing products to making the case for outcomes, always letting real time data drive results. Maximizing MarTech platform investments, creating smart interactive content that increases engagement, and driving leads is our specialty.</span>
+                </div>
+                    
+            </div>
+        </div>
+    </article>    
+
+
+

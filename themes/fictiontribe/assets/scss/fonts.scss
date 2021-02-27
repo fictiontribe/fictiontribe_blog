@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'didot-regular';
+    src: url('../fonts/didotlh-romanosf-webfont.woff2') format('woff2'),
+         url('../fonts/didotlh-romanosf-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'didot-italic';
+    src: url('../fonts/didotlh-italicosf-webfont.woff2') format('woff2'),
+         url('../fonts/didotlh-italicosf-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  src: url('../fonts/gilroy-extrabold.eot');
+  font-family: 'Gilroy-ExtraBold';
+  src: url('../fonts/gilroy-extrabold.woff2') format('woff2'), url('../fonts/gilroy-extrabold.woff') format('woff'), url('../fonts/gilroy-extrabold.eot?#iefix') format('embedded-opentype'), url('../fonts/gilroy-extrabold.ttf') format('truetype');
+}
+@font-face {
+  src: url('../fonts/gilroy-light.eot');
+  font-family: 'Gilroy-Light';
+  src: url('../fonts/gilroy-light.woff2') format('woff2'), url('../fonts/gilroy-light.woff') format('woff'), url('../fonts/gilroy-light.eot?#iefix') format('embedded-opentype'), url('../fonts/gilroy-light.ttf') format('truetype');
+}

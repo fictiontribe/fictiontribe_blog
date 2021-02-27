@@ -1,0 +1,6 @@
+plugin:
+    name: 'sean.authorfields::lang.plugin.name'
+    description: 'sean.authorfields::lang.plugin.description'
+    author: Sean
+    icon: oc-icon-bomb
+    homepage: ''
