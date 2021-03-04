@@ -5,10 +5,10 @@
     <div id="hero">
       {% if post.featured_images.count %}  
         {% for image in post.featured_images %}
-            <div id="masthead-image" style="background: url('{{ image.path }}')">
+            <div class="parallax lazy" id="masthead-image" data-src="{{ image.path }}">
         {% endfor %}
          {% else %}   
-          <div id="masthead-image" style="background: url('{{ 'assets/images/fictiontribe-logo-white.png'|theme }}')">
+          <div class="parallax lazy" id="masthead-image" data-src="{{ 'assets/images/fictiontribe-logo-white.png'|theme }}">
         {% endif %}    
           <div id="headlines">
             <h1>{{post.title}}</h1>
@@ -19,10 +19,9 @@
           </div>
     </div>
     
-
-     
+  
     </div>
-
+<div class="body-bg">
     <article>
         <div id="attributation-bar">
                     <div id="author-avatar">
@@ -90,5 +89,5 @@
         </div>
     </article>    
 
-
+</div>
 

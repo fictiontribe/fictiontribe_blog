@@ -1,0 +1,89 @@
+1614815824a:1:{s:13:"site/head.htm";a:5:{s:8:"fileName";s:13:"site/head.htm";s:7:"content";s:2385:"<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        {% component 'SeoCmsPage' %}
+        
+        <meta name="author" content="{{ post.user.first_name }} {{ post.user.last_name }} | Fiction Tribe">
+       
+       {% if post.featured_images.count %}  
+        {% for image in post.featured_images %}
+            <meta property="og:image" content="{{ image.path }}" />
+        {% endfor %}
+         {% else %}   
+          <meta property="og:image" content="{{ 'assets/images/background.jpg'|theme }}">
+        {% endif %} 
+        
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@FictionTribe">
+        <meta name="twitter:title" content="{{ post.seo_title | generateTitle}}">
+        <meta name="twitter:description" content="{{post.seo_description}}">
+        <meta name="twitter:creator" content="@FictionTribe">
+        <meta property="og:title" content="{{post.seo_description}}" />
+        <meta property="og:url" content="{{ this.page.baseFileName }}" />
+        <meta name="twitter:domain" content="fictiontribe.com"/>
+        <meta property="og:description" content="{{post.seo_description}}" />
+        <meta property="og:site_name" content="Fiction Tribe" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="generator" content="OctoberCMS">
+        <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}">
+
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ 'apple-touch-icon.png'|theme }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ 'favicon-32x32.png'|theme }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ 'favicon-16x16.png'|theme }}">
+        <link rel="manifest" href="{{ 'site.webmanifest'|theme }}">
+        <link rel="mask-icon" href="{{ 'safari-pinned-tab.svg'|theme }}" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <link href="{{ 'assets/scss/style.css'|theme }}" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> 
+        {% styles %}
+          
+    </head>";s:5:"mtime";i:1614806371;s:6:"markup";s:2385:"<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        {% component 'SeoCmsPage' %}
+        
+        <meta name="author" content="{{ post.user.first_name }} {{ post.user.last_name }} | Fiction Tribe">
+       
+       {% if post.featured_images.count %}  
+        {% for image in post.featured_images %}
+            <meta property="og:image" content="{{ image.path }}" />
+        {% endfor %}
+         {% else %}   
+          <meta property="og:image" content="{{ 'assets/images/background.jpg'|theme }}">
+        {% endif %} 
+        
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@FictionTribe">
+        <meta name="twitter:title" content="{{ post.seo_title | generateTitle}}">
+        <meta name="twitter:description" content="{{post.seo_description}}">
+        <meta name="twitter:creator" content="@FictionTribe">
+        <meta property="og:title" content="{{post.seo_description}}" />
+        <meta property="og:url" content="{{ this.page.baseFileName }}" />
+        <meta name="twitter:domain" content="fictiontribe.com"/>
+        <meta property="og:description" content="{{post.seo_description}}" />
+        <meta property="og:site_name" content="Fiction Tribe" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="generator" content="OctoberCMS">
+        <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}">
+
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ 'apple-touch-icon.png'|theme }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ 'favicon-32x32.png'|theme }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ 'favicon-16x16.png'|theme }}">
+        <link rel="manifest" href="{{ 'site.webmanifest'|theme }}">
+        <link rel="mask-icon" href="{{ 'safari-pinned-tab.svg'|theme }}" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <link href="{{ 'assets/scss/style.css'|theme }}" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> 
+        {% styles %}
+          
+    </head>";s:4:"code";N;}}

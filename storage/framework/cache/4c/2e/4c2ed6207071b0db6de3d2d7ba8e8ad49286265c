@@ -1,0 +1,47 @@
+1614816067a:1:{s:11:"article.htm";a:7:{s:8:"fileName";s:11:"article.htm";s:7:"content";s:427:"[SeoBlogPost]
+post = "post"
+
+[SeoCmsPage]
+==
+    
+    {% partial 'site/head' %}
+
+    <body>
+        <!-- Header -->
+        <header id="layout-header">
+            {% partial 'site/header' %}
+        </header>
+        <div id="swup">
+
+        <!-- Content -->
+    
+         
+          {% page %}
+
+     
+        </div>
+        <!-- Footer -->
+        {% partial 'site/footer' %}
+   
+    </body>
+</html>";s:5:"mtime";i:1614815465;s:6:"markup";s:367:"{% partial 'site/head' %}
+
+    <body>
+        <!-- Header -->
+        <header id="layout-header">
+            {% partial 'site/header' %}
+        </header>
+        <div id="swup">
+
+        <!-- Content -->
+    
+         
+          {% page %}
+
+     
+        </div>
+        <!-- Footer -->
+        {% partial 'site/footer' %}
+   
+    </body>
+</html>";s:4:"code";N;s:11:"SeoBlogPost";a:1:{s:4:"post";s:4:"post";}s:10:"SeoCmsPage";a:0:{}}}

@@ -1,0 +1,86 @@
+1614816067a:1:{s:15:"site/footer.htm";a:6:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:2030:"==
+<footer id="layout-footer">
+<div id="footer" class="mt-5">
+    <div class="container">
+     
+        <div class="row">
+            <div class="col-6 col-md-9 col-lg-10">
+              <a href="https://fictiontribe.com/">
+                  <img class="logo" src="{{ 'assets/images/fictiontribe-logo-white.png'|theme }}" alt="Fiction Tribe">
+              </a>
+            </div>
+            <div class=" col-lg-2 col-md-3 col-sm-6 ms-auto  col-6">
+                <div id="contact-info">
+                   <a href="https://www.google.com/maps/place/The+Glass+Lab/@45.5101118,-122.6645032,17z/data=!3m1!4b1!4m5!3m4!1s0x54950a735f9c9369:0xf3afb20907cd199f!8m2!3d45.5101118!4d-122.6623145" target="_blank"> The Glass Lab<br>
+    					350 SE Mill St.<br>
+    					Portland, OR 97214<br>
+    					Suite 8<br></a>
+					   <span class="appleLinksWhite">503.954.2268</span><p></p>
+				      </div>
+				
+			
+        </div>
+    </div>
+</div>
+ </footer>
+
+<!-- Scripts -->
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+ <script src="{{ 'assets/javascript/lazyload.js'|theme }}"></script> 
+<script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
+<script src="{{ 'assets/bootstrap5/dist/js/bootstrap.min.js'|theme }}"></script>
+<script src="{{ 'assets/swup/SwupScrollPlugin.min.js'|theme }}"></script> 
+<script src="{{ 'assets/swup/SwupJsPlugin.min.js'|theme }}"></script> 
+ <script src="{{ 'assets/swup/swup.js'|theme }}"></script> 
+ <script src="{{ 'assets/gsap-business-green/minified/gsap.min.js'|theme }}"></script> 
+<script src="{{ 'assets/javascript/paroller/dist/jquery.paroller.min.js'|theme }}"></script>
+ <script src="{{ 'assets/javascript/scripts.js'|theme }}"></script> 
+<!-- <script src="https://unpkg.com/jarallax@1/dist/jarallax.min.js"></script> -->
+<!-- <script src="{{ 'assets/javascript/app.js'|theme }}"></script>  -->
+{% framework extras %}
+{% scripts %}";s:5:"mtime";i:1614813558;s:6:"markup";s:2026:"<footer id="layout-footer">
+<div id="footer" class="mt-5">
+    <div class="container">
+     
+        <div class="row">
+            <div class="col-6 col-md-9 col-lg-10">
+              <a href="https://fictiontribe.com/">
+                  <img class="logo" src="{{ 'assets/images/fictiontribe-logo-white.png'|theme }}" alt="Fiction Tribe">
+              </a>
+            </div>
+            <div class=" col-lg-2 col-md-3 col-sm-6 ms-auto  col-6">
+                <div id="contact-info">
+                   <a href="https://www.google.com/maps/place/The+Glass+Lab/@45.5101118,-122.6645032,17z/data=!3m1!4b1!4m5!3m4!1s0x54950a735f9c9369:0xf3afb20907cd199f!8m2!3d45.5101118!4d-122.6623145" target="_blank"> The Glass Lab<br>
+    					350 SE Mill St.<br>
+    					Portland, OR 97214<br>
+    					Suite 8<br></a>
+					   <span class="appleLinksWhite">503.954.2268</span><p></p>
+				      </div>
+				
+			
+        </div>
+    </div>
+</div>
+ </footer>
+
+<!-- Scripts -->
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+ <script src="{{ 'assets/javascript/lazyload.js'|theme }}"></script> 
+<script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
+<script src="{{ 'assets/bootstrap5/dist/js/bootstrap.min.js'|theme }}"></script>
+<script src="{{ 'assets/swup/SwupScrollPlugin.min.js'|theme }}"></script> 
+<script src="{{ 'assets/swup/SwupJsPlugin.min.js'|theme }}"></script> 
+ <script src="{{ 'assets/swup/swup.js'|theme }}"></script> 
+ <script src="{{ 'assets/gsap-business-green/minified/gsap.min.js'|theme }}"></script> 
+<script src="{{ 'assets/javascript/paroller/dist/jquery.paroller.min.js'|theme }}"></script>
+ <script src="{{ 'assets/javascript/scripts.js'|theme }}"></script> 
+<!-- <script src="https://unpkg.com/jarallax@1/dist/jarallax.min.js"></script> -->
+<!-- <script src="{{ 'assets/javascript/app.js'|theme }}"></script>  -->
+{% framework extras %}
+{% scripts %}";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

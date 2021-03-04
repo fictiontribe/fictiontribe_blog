@@ -1,12 +1,14 @@
 title = "Article Category"
 url = "/article/category/:slug"
-layout = "default"
+layout = "category"
 description = "Viewing articles in specific category"
 is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
 
 [blogPosts]
 pageNumber = "{{ :page }}"
-categoryFilter = ":slug"
+categoryFilter = "{{:slug}}"
 postsPerPage = 10
 noPostsMessage = "No posts found"
 sortOrder = "published_at desc"
@@ -17,6 +19,14 @@ postPage = "article/post"
 slug = "{{ :slug }}"
 displayEmpty = 0
 categoryPage = "article/category"
+
+[viewBag]
+extras[0][featuredimage] = "/background-portrait.jpg"
+extras[0][settings][seo_keywords] = ""
+extras[0][settings][canonical_url] = ""
+extras[0][settings][redirect_url] = ""
+extras[0][settings][robot_index] = "index"
+extras[0][settings][robot_follow] = "follow"
 ==
 <div class="container">
 <div class="row">

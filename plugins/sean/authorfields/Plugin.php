@@ -21,7 +21,7 @@ class Plugin extends PluginBase
 
             if (!$model instanceof BackendUserModel)
                 return;
-
+                return;
 
             $form->addTabFields([
                 'teacher' => [

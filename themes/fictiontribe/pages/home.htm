@@ -1,7 +1,17 @@
 title = "Home"
 url = "/"
-layout = "default"
+layout = "home"
 is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
+
+[viewBag]
+extras[0][featuredimage] = "/cropped-images/background-0-156-1600-913-1614712645.jpg"
+extras[0][settings][seo_keywords] = ""
+extras[0][settings][canonical_url] = ""
+extras[0][settings][redirect_url] = ""
+extras[0][settings][robot_index] = "index"
+extras[0][settings][robot_follow] = "follow"
 
 [blogPosts]
 pageNumber = "{{ :page }}"
@@ -13,9 +23,11 @@ categoryPage = "article/category"
 postPage = "article/post"
 
 [blogCategories]
-slug = "{{ :slug }}"
+slug = "{{ :slug  }}"
 displayEmpty = 0
 categoryPage = "article/category"
+
+[SeoCmsPage]
 ==
 <div class="container">
 <div class="row">

@@ -200,9 +200,10 @@ li {
 #masthead-image {
 	margin-top: 45px;
 	width: 100%;
-	background-color: #171717;
-    background-size: cover!important;
-    background-position: center!important;
+	// background-color: #171717;
+ //    background-size: cover!important;
+ //    background-position-x: 50%!important;
+ //    background-position-y: 50%!important;
 	color: #fff;
 	text-align: center;
 }
@@ -271,6 +272,85 @@ article {
 	// float: right;
 	line-height: 24px;
 }
+
+//////////////////////////////////
+// After Base
+//////////////////////////////////
+#swup.four-oh-four{
+	height: 100%;
+
+	h1, h2 {
+		color: white;
+	}
+}
+
+ul.post-list {
+	list-style-type: none;
+}
+
+.badge {
+	display: inline-block;
+	min-width: 10px;
+	padding: 3px 7px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #ffffff;
+	line-height: 1;
+	vertical-align: middle;
+	white-space: nowrap;
+	text-align: center;
+	background-color: #777777;
+	border-radius: 10px;
+}
+.body-bg {
+	background: white;
+}
+
+.parallax {
+	z-index: -1;
+  position: relative;
+  // background-attachment: fixed;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /**
+   * Default height
+   */
+  height: 100%;
+}
+
+.jarallax {
+    position: relative;
+    z-index: 0;
+}
+.jarallax > .jarallax-img {
+    position: absolute;
+    object-fit: cover;
+    /* support for plugin https://github.com/bfred-it/object-fit-images */
+    font-family: 'object-fit: cover;';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.lazy {
+  opacity: 0;
+  background-position: center!important;
+  background-size: cover!important;
+  &.loaded {
+    opacity: 1;
+    transition: opacity .75s ease .15s;
+  }
+  &.contain {
+    background-size: contain!important; 
+    background-position: top center!important;
+    background-repeat: no-repeat;
+  }
+}
+
 
 // Footer
 

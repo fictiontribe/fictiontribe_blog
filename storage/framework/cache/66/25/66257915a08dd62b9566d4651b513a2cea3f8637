@@ -1,0 +1,65 @@
+1614815776a:1:{s:8:"home.htm";a:6:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:912:"[SeoCmsPage]
+==
+ {% partial 'site/head' %}
+    <body>
+        <!-- Header -->
+        <header id="layout-header">
+            {% partial 'site/header' %}
+        </header>
+
+      <div id="swup">
+   
+        {% if viewBag.extras[0].featuredimage %} 
+         <div class="parallax lazy" id="masthead-image" data-src="{{ viewBag.extras[0].featuredimage | media }}"> 
+          {% else %}
+         <div class="parallax lazy" id="masthead-image" data-src="{{ 'assets/images/background.jpg'|theme }}">
+          {% endif %} 
+          
+            <div id="headlines">
+                <h1>Fiction Tribe</h1>
+                <h2>Find Your Story.</h2> 
+            </div>
+        </div>
+       
+        <div class="body-bg pt-5">
+          {% page %}
+        </div>
+      
+      </div> <!-- End Swup -->
+
+        <!-- Footer -->
+        {% partial 'site/footer' %}
+  
+    </body>
+</html>";s:5:"mtime";i:1614815174;s:6:"markup";s:893:"{% partial 'site/head' %}
+    <body>
+        <!-- Header -->
+        <header id="layout-header">
+            {% partial 'site/header' %}
+        </header>
+
+      <div id="swup">
+   
+        {% if viewBag.extras[0].featuredimage %} 
+         <div class="parallax lazy" id="masthead-image" data-src="{{ viewBag.extras[0].featuredimage | media }}"> 
+          {% else %}
+         <div class="parallax lazy" id="masthead-image" data-src="{{ 'assets/images/background.jpg'|theme }}">
+          {% endif %} 
+          
+            <div id="headlines">
+                <h1>Fiction Tribe</h1>
+                <h2>Find Your Story.</h2> 
+            </div>
+        </div>
+       
+        <div class="body-bg pt-5">
+          {% page %}
+        </div>
+      
+      </div> <!-- End Swup -->
+
+        <!-- Footer -->
+        {% partial 'site/footer' %}
+  
+    </body>
+</html>";s:4:"code";N;s:10:"SeoCmsPage";a:0:{}}}

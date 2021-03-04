@@ -123,4 +123,12 @@
   'AnandPatel\\SeoExtension\\Components\\BlogPost' => 'plugins/anandpatel/seoextension/components/BlogPost.php',
   'AnandPatel\\SeoExtension\\Components\\StaticPage' => 'plugins/anandpatel/seoextension/components/StaticPage.php',
   'AnandPatel\\SeoExtension\\Components\\CmsPage' => 'plugins/anandpatel/seoextension/components/CmsPage.php',
+  'AnandPatel\\SeoExtension\\classes\\Helper' => 'plugins/anandpatel/seoextension/classes/Helper.php',
+  'AnandPatel\\SeoExtension\\Models\\Settings' => 'plugins/anandpatel/seoextension/models/Settings.php',
+  'netsti\\seo\\Plugin' => 'plugins/netsti/seo/Plugin.php',
+  'NetSTI\\SEO\\Components\\SeoPage' => 'plugins/netsti/seo/components/SeoPage.php',
+  'AnandPatel\\SeoExtension\\models\\Settings' => 'plugins/anandpatel/seoextension/models/Settings.php',
+  'pkurg\\Customfields\\Models\\UserTabOrder' => 'plugins/pkurg/customfields/models/UserTabOrder.php',
+  'RainLab\\User\\Controllers\\Users' => 'plugins/rainlab/user/controllers/Users.php',
+  'pkurg\\Customfields\\Models\\UserValuesData' => 'plugins/pkurg/customfields/models/UserValuesData.php',
 );

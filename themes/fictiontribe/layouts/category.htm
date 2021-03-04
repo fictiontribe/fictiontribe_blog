@@ -1,0 +1,33 @@
+[SeoCmsPage]
+==
+{% partial 'site/head' %}
+    <body>
+
+        <!-- Header -->
+        <header id="layout-header">
+            {% partial 'site/header' %}
+        </header>
+         <div id="swup">
+        <!-- Content -->
+        {% if viewBag.extras[0].featuredimage %} 
+         <div class="parallax lazy" id="masthead-image" data-src="{{ viewBag.extras[0].featuredimage | media }}"> 
+          {% else %}
+         <div class="parallax lazy" id="masthead-image" data-src="{{ 'assets/images/background.jpg'|theme }}">
+          {% endif %} 
+            <div id="headlines">
+                <h1>{{ category.name }}</h1>
+                <h2>{{this.page.description}}</h2> 
+            </div>
+        </div>
+
+        <div class="body-bg pt-5">
+          {% page %}
+        </div>
+      
+        </div>
+        <!-- Footer -->
+        {% partial 'site/footer' %}
+    
+
+    </body>
+</html>
